@@ -7,10 +7,11 @@ class Program
         //creating an object (variable of a cetain class type)
         Transaction transaction = new Transaction();
 
-        transaction.date = new DateTime(2008, 6, 1);
-        transaction.val = 10.5f;
+        transaction.setDate(new DateTime(2008, 6, 1));
+        transaction.setVal(10.5f);
 
-        Console.WriteLine("transaction value is " + transaction.val + " at time " + transaction.date.ToString());
+        Console.WriteLine("Transaction value is " + transaction.getVal() + 
+            " at time " + transaction.getDate().ToString());
     }
 
 }
